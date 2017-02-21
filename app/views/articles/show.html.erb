@@ -1,0 +1,14 @@
+<table class="table table-bordered">
+  <tr>
+    <th>Title</th>
+    <th>Content</th>
+    <th>Creation date</th>
+  </tr>
+  <tr>
+    <td><%=raw @article.title %></td>
+    <td><%=raw @html %></td>
+    <td><%= @article.created_at %></td>
+    <td><%= link_to "Edit", edit_article_path %></td>
+  </tr>
+</table>
+<%= link_to "Back to article list", articles_path %>
